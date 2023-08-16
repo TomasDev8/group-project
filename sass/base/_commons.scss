@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    color: #d41443;
+}
+
+.label {
+    font-family: 'Titan One';
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    color: #ffa5ba;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

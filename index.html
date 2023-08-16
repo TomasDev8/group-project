@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    integrity="sha512-gA2Bvu0/hw4oj0Lp8ZHjK+o3S4BE5m8d/wNVy6ktKLhHKPpWLQwv9ixzuWirWOakoJqlBdePq2NhoCaUOQ5npQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="./css/main.min.css"/>
+</head>
+
+<body>
+  <section class="about-us section" id="about-us">
+    <div class="container position">
+      <p class="about-us__title-lable label">tradition and love</p>
+      <h2 class="about-us__title title">how it's made?</h2>
+      <div class="about-us__card">
+        <div class="about-us__card-image">
+          <picture class="about-us__img-cow">
+            <source srcset="
+                        ./images/cow-and-jar-of-milk-desktop.png     1x,
+                        ./images/cow-and-jar-of-milk-desktop-@2x.png 2x
+                      " type="image/png" media="(min-width: 1200px)" />
+
+            <source srcset="
+                        ./images/cow-and-jar-of-milk-tablet.png     1x,
+                        ./images/cow-and-jar-of-milk-tablet-@2x.png 2x
+                      " type="image/png" media="(min-width: 768px)" />
+
+            <source srcset="
+                        ./images/cow-and-jar-of-milk-mobile.png     1x,
+                        ./images/cow-and-jar-of-milk-mobile-@2x.png 2x
+                      " type="image/png" media="(min-width: 480px)" />
+            <img src="./images/cow-and-jar-of-milk-mobile.png"
+              alt="company's representative image of a cow next to a milk jar" width="501" loading="lazy" />
+          </picture>
+        </div>
+
+        <div class="about-us__card-description">
+          <p class="about-us__card-description-current">
+            Ice is a place where you will become not only a little happier,
+            but also healthier. Health is the main value for us, and we follow
+            it when creating our handmade desserts..
+          </p>
+          <p class="about-us__card-description-text">
+            We use traditional recipes and 100% natural ingredients. Our
+            products are so natural that they can be given to children from
+            the age of three years. Sweets lovers can expect 55 types of ice
+            cream, 15 types of coffee and 23 milkshakes.
+            <br />
+          </p>
+
+          <button type="button" class="about-us__button" data-modal-open>
+            Read more
+            <svg class="about-us__button-icon" aria-hidden="true">
+              <use href="./svg-sprite.svg#icon-arrow-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal about-us__modal">
+        <div class="modal__container">
+          <button class="modal__close-botton" type="button" data-modal-close>
+            <svg class="modal__icon-cross">
+              <use href="./svg-sprite.svg#icon-close-button"></use>
+            </svg>
+          </button>
+          <h2 class="modal__title">About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi minus perspiciatis accusantium commodi fugiat
+            ad rerum voluptatibus autem harum. Nesciunt nihil laboriosam quos expedita dolores nulla error numquam
+            blanditiis vitae.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-qualities section">
+    <div class="container">
+      <ul class="product-qualities__list list">
+        <li class="product-qualities__item">
+          <p class="product-qualities__title">721</p>
+          <p class="product-qualities__text">
+            At 721 Cow, we're passionate about-us producing the highest
+            quality ice cream possible.
+          </p>
+        </li>
+        <li class="product-qualities__item">
+          <p class="product-qualities__title">16kg</p>
+          <p class="product-qualities__text">
+            You can be sure you're getting a scoop of the freshest ice cream
+            around.
+          </p>
+        </li>
+        <li class="product-qualities__item">
+          <p class="product-qualities__title">84</p>
+          <p class="product-qualities__text">
+            We use only the freshest, locally-sourced ingredients to make our
+            84 unique and delicious flavors.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>
